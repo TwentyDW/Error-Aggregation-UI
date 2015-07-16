@@ -11,7 +11,8 @@ require(['main'], function (jsonpickle) {
 				make_details_window(xhr.responseText);
 			}
 			else if (xhr.status != 200) {
-				alert("GET request for JSON data failed!");
+				document.write("GET request for JSON data failed!");
+				document.close();
 			}		
 		};
 	}

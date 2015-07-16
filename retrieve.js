@@ -19,7 +19,8 @@ require(['main'], function (jsonpickle) {
 				});			
 			}
 			else if (xhr.status != 200)  {	
-				alert("GET request for JSON data failed!");
+				document.write("GET request for JSON data failed!");
+				document.close();
 			}
 		};
 	}
